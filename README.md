@@ -1,30 +1,20 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse  = TRUE,
-  comment   = "#>",
-  fig.path  = "man/figures/README-",
-  out.width = "100%"
-)
-```
 
 # pkgmin
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The goal of pkgmin is to show the structure of an R package.
 
 ## Installation
 
-You can install the dev version of pkgmin from [GitHub](https://github.com/ahasverus/pkgmin) with:
+You can install the dev version of pkgmin from
+[GitHub](https://github.com/ahasverus/pkgmin) with:
 
-```{r echo=TRUE, eval=FALSE}
+``` r
 devtools::install_github("ahasverus/pkgmin", build_vignettes = TRUE)
 ```
 
@@ -32,9 +22,9 @@ devtools::install_github("ahasverus/pkgmin", build_vignettes = TRUE)
 
 Browse the vignette for a complete example:
 
-```{r echo=TRUE, eval=FALSE}
+``` r
 library(pkgmin)
 vignette(topic = "pkgmin")
 ```
 
-Enjoy!
+Enjoy\!
