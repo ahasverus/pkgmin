@@ -13,7 +13,9 @@
 #' @export
 #'
 #' @examples
-#' moyenne(c(2, 4))
+#' data(xy)
+#' moyenne(xy$x)
+#' moyenne(xy[ , "y"], na_rm = TRUE)
 #'
 
 moyenne <- function(x, na_rm = FALSE) {
