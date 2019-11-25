@@ -2,3 +2,4 @@
 ^README\.Rmd$
 ^dev_history.R$
 ^\.travis\.yml$
+^appveyor\.yml$

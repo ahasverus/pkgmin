@@ -95,7 +95,7 @@ usethis::use_git_ignore("README.html")
 system("git add -A")
 system("git commit -m 'Edit README'")
 
-## Remove inst/doc from .gitignore
+## ● Remove inst/doc from .gitignore
 system("git add -A")
 system("git commit -m 'Remove inst/doc'")
 
@@ -106,3 +106,11 @@ usethis::use_travis()
 rmarkdown::render("README.Rmd")
 system("git add -A")
 system("git commit -m 'Setup Travis CI'")
+system("git push")
+
+usethis::use_appveyor()
+## ● Edit 'appveyor.yml'
+rmarkdown::render("README.Rmd")
+system("git add -A")
+system("git commit -m 'Setup Appveyor'")
+system("git push")

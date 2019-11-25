@@ -7,6 +7,8 @@
 
 [![Travis build
 status](https://travis-ci.org/ahasverus/pkgmin.svg?branch=master)](https://travis-ci.org/ahasverus/pkgmin)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/ahasverus/pkgmin?branch=master&svg=true)](https://ci.appveyor.com/project/ahasverus/pkgmin)
 <!-- badges: end -->
 
 The goal of pkgmin is to show the structure of an R package.
