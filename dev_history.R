@@ -1,4 +1,5 @@
 # git reset --hard HEAD~1
+# remotes::install_github("ropenscilabs/travis")
 
 path   <- "/Users/nicolascasajus/Documents"
 pkname <- "pkgmin"
@@ -123,4 +124,11 @@ system("git push")
 pkgdown::build_site()
 system("git add -A")
 system("git commit -m 'Build website'")
+system("git push")
+
+usethis::use_pkgdown_travis()
+travis::use_travis_deploy()
+## ● Edit '.travis.yml'
+system("git add -A")
+system("git commit -m 'Build website (with Travis CI)'")
 system("git push")
