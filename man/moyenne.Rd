@@ -19,6 +19,8 @@ Cette fonction calcule la moyenne d'un vecteur numerique en
 omettant les valeurs manquantes si l'utilisateur le souhaite.
 }
 \examples{
-moyenne(c(2, 4))
+data(xy)
+moyenne(xy$x)
+moyenne(xy[ , "y"], na_rm = TRUE)
 
 }
