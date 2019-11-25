@@ -1,5 +1,7 @@
 ---
 title: "pkgmin"
+author: "Nicolas Casajus"
+date: "25 novembre 2019"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{pkgmin}
@@ -10,10 +12,114 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment  = "#>"
 )
 ```
 
-```{r setup}
+Le package `{pkgmin}` est un exemple de package très simple sous R.
+Le versioning indique les différentes étapes qui ont conduit à son élaboration (_from scratch_).
+
+Tout d'abord, chargeons le package sous R :
+
+```{r setup, echo=TRUE, eval=TRUE}
+## Chargement du package          -----------
 library(pkgmin)
+
+## Importation des données        -----------
+data(xy)
 ```
+
+Quelques commandes utiles pour bien démarrer :
+
+```{r help, echo=TRUE, eval=FALSE}
+## Documentation du package       -----------
+?pkgmin
+
+## Contenu du package             -----------
+ls("package:pkgmin")
+
+## Aide des objets importés       -----------
+?pkgmin::moyenne
+?pkgmin::xy
+```
+
+Importons les données de l'exemple reproductible :
+
+```{r datas, echo=TRUE, eval=TRUE}
+## Importation des données        -----------
+data(xy)
+
+## Objets en mémoire              -----------
+ls()
+
+## Aperçu des données             -----------
+xy
+```
+
+Utilisons-le :
+
+```{r runs, echo=TRUE, eval=TRUE}
+## Moyenne sans valeur manquante  -----------
+moyenne(xy$x)
+
+## Moyenne avec valeur manquante  -----------
+moyenne(xy$y, na_rm = TRUE)
+```
+
+
+```{r boxplot, echo=TRUE, eval=TRUE, dpi=300, fig.path="assets/chunks/", fig.width=7, fig.height=2}
+## Nouvelles données              -----------
+x   <- rnorm(100)
+moy <- pkgmin::moyenne(x)
+
+## Graphical parameters           -----------
+mycol <- "#7c4e20"
+par(
+  bg       = "transparent",
+  mar      = rep(0, 4),
+  col.axis = mycol,
+  col      = mycol,
+  fg       = mycol,
+  family   = "serif",
+  tcl      = -0.25,
+  mgp      = c(3, .30, 0)
+)
+
+## Add boxplot                    -----------
+boxplot(
+  x,
+  col        = "#49847b",
+  border     = "#7c4e20",
+  horizontal = TRUE,
+  axes       = FALSE
+)
+
+## Ajout de la moyenne            -----------
+points(
+  x   = moy,
+  y   = 1,
+  pch = 17,
+  cex = 2,
+  col = "red"
+)
+
+## Ajout de l'axe des x (axe)     -----------
+axis(
+  side      = 1,
+  pos       = 0.6,
+  at        = c(par()$usr[1], par()$usr[2]),
+  labels    = NA,
+  lwd       = 1,
+  lwd.ticks = 0
+)
+
+## Ajout de l'axe des x (valeurs) -----------
+axis(
+  side      = 1,
+  pos       = 0.6,
+  lwd       = 0,
+  lwd.ticks = 1
+)
+```
+
+Enjoy!
