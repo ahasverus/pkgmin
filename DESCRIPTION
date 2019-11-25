@@ -22,3 +22,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/ahasverus/pkgmin
+BugReports: https://github.com/ahasverus/pkgmin/issues
