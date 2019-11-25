@@ -100,3 +100,9 @@ system("git add -A")
 system("git commit -m 'Remove inst/doc'")
 
 usethis::use_github(protocol = "https")
+
+usethis::use_travis()
+## ● Edit '.travis.yml'
+rmarkdown::render("README.Rmd")
+system("git add -A")
+system("git commit -m 'Setup Travis CI'")

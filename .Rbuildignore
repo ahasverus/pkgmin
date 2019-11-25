@@ -1,3 +1,4 @@
 ^LICENSE\.md$
 ^README\.Rmd$
 ^dev_history.R$
+^\.travis\.yml$

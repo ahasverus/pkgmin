@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.org/ahasverus/pkgmin.svg?branch=master)](https://travis-ci.org/ahasverus/pkgmin)
 <!-- badges: end -->
 
 The goal of pkgmin is to show the structure of an R package.
