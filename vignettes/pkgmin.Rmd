@@ -24,9 +24,6 @@ Tout d'abord, chargeons le package sous R :
 ```{r setup, echo=TRUE, eval=TRUE}
 ## Chargement du package          -----------
 library(pkgmin)
-
-## Importation des données        -----------
-data(xy)
 ```
 
 Quelques commandes utiles pour bien démarrer :
@@ -67,7 +64,7 @@ moyenne(xy$y, na_rm = TRUE)
 ```
 
 
-```{r boxplot, echo=TRUE, eval=TRUE, dpi=300, fig.path="assets/chunks/", fig.width=7, fig.height=2}
+```{r boxplot, echo=TRUE, eval=TRUE, fig.width=7, fig.height=2}
 ## Nouvelles données              -----------
 x   <- rnorm(100)
 moy <- pkgmin::moyenne(x)
