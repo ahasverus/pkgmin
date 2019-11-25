@@ -114,3 +114,8 @@ rmarkdown::render("README.Rmd")
 system("git add -A")
 system("git commit -m 'Setup Appveyor'")
 system("git push")
+
+usethis::use_pkgdown()
+system("git add -A")
+system("git commit -m 'Setup pkgdown'")
+system("git push")

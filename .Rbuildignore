@@ -3,3 +3,6 @@
 ^dev_history.R$
 ^\.travis\.yml$
 ^appveyor\.yml$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
