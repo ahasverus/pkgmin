@@ -119,3 +119,8 @@ usethis::use_pkgdown()
 system("git add -A")
 system("git commit -m 'Setup pkgdown'")
 system("git push")
+
+pkgdown::build_site()
+system("git add -A")
+system("git commit -m 'Build website'")
+system("git push")
