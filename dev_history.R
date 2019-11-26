@@ -137,3 +137,13 @@ usethis::use_testthat()
 system("git add -A")
 system("git commit -m 'Init testthat'")
 system("git push")
+
+usethis::use_test("moyenne")
+system("git add -A")
+system("git commit -m 'Init moyenne tests'")
+system("git push")
+
+## ● Edit 'tests/testthat/test-moyenne.R'
+system("git add -A")
+system("git commit -m 'Add moyenne tests'")
+system("git push")
