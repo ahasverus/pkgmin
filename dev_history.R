@@ -132,3 +132,8 @@ travis::use_travis_deploy()
 system("git add -A")
 system("git commit -m 'Build website (with Travis CI)'")
 system("git push")
+
+usethis::use_testthat()
+system("git add -A")
+system("git commit -m 'Init testthat'")
+system("git push")
