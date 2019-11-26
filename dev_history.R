@@ -134,16 +134,12 @@ system("git commit -m 'Build website (with Travis CI)'")
 system("git push")
 
 usethis::use_testthat()
+usethis::use_test("moyenne")
 system("git add -A")
 system("git commit -m 'Init testthat'")
 system("git push")
 
-usethis::use_test("moyenne")
-system("git add -A")
-system("git commit -m 'Init moyenne tests'")
-system("git push")
-
 ## ● Edit 'tests/testthat/test-moyenne.R'
 system("git add -A")
-system("git commit -m 'Add moyenne tests'")
+system("git commit -m 'Edit moyenne tests & Improve function checks'")
 system("git push")

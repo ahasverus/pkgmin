@@ -23,9 +23,19 @@ moyenne <- function(x, na_rm = FALSE) {
   ## Checks                         ----------
 
   if (missing(x)) { stop("Missing x.") }
-  if (!is.vector(x)) { stop("x must be a numeric vector.") }
-  if (!is.numeric(x)) { stop("x must be a numeric vector.") }
-  if (length(x) < 2) { stop("x must be length > 1.") }
+
+  if (is.null(x)) { stop("x must be a numeric vector.") }
+  if (sum(is.na(x)) == length(x)) { stop("x cannot be NA.") }
+
+  if (!is.vector(x))      { stop("x must be a numeric vector.") }
+  if (!is.numeric(x))     { stop("x must be a numeric vector.") }
+  if (length(x) < 2)      { stop("x must be length > 1.") }
+
+  if (is.null(na_rm)) { stop("na_rm must be TRUE or FALSE.") }
+
+  if (sum(is.na(na_rm)) == length(na_rm)) { stop("na_rm cannot be NA.") }
+
+  if (length(na_rm) > 1)  {  stop("na_rm must be TRUE or FALSE.") }
   if (!is.logical(na_rm)) { stop("na_rm must be TRUE or FALSE.") }
 
   ## Remove NAs (if required)       ----------
