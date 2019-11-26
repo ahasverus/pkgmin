@@ -11,6 +11,11 @@ status](https://travis-ci.org/ahasverus/pkgmin.svg?branch=master)](https://travi
 status](https://ci.appveyor.com/api/projects/status/github/ahasverus/pkgmin?branch=master&svg=true)](https://ci.appveyor.com/project/ahasverus/pkgmin)
 [![Codecov test
 coverage](https://codecov.io/gh/ahasverus/pkgmin/branch/master/graph/badge.svg)](https://codecov.io/gh/ahasverus/pkgmin?branch=master)
+[![Project Status:
+Stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![License:
+MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/223958446.svg)](https://zenodo.org/badge/latestdoi/223958446)
 <!-- badges: end -->
 
 The goal of pkgmin is to show the structure of an R package.
