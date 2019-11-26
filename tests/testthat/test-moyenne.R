@@ -36,8 +36,8 @@ test_that("check outputs", {
   expect_equal(moyenne(xy$x), -0.7596629, tolerance = 1e-1)
   expect_equal(moyenne(xy$y, na_rm = TRUE), 5.5, tolerance = 1e-1)
 
-  expect_vector(moyenne(xy$x))
-  expect_vector(moyenne(xy$y, na_rm = TRUE))
+  # expect_vector(moyenne(xy$x))
+  # expect_vector(moyenne(xy$y, na_rm = TRUE))
 
   expect_length(moyenne(xy$x), 1)
   expect_length(moyenne(xy$y, na_rm = TRUE), 1)

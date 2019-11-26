@@ -12,7 +12,6 @@ notifications:
 
 r_packages:
   - magrittr
-  - vctrs
 
 before_cache: Rscript -e 'remotes::install_cran("pkgdown")'
 deploy:
