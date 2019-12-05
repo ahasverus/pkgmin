@@ -38,4 +38,4 @@ library(pkgmin)
 vignette(topic = "pkgmin")
 ```
 
-Enjoy\!
+Enjoy \!
