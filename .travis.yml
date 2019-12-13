@@ -2,8 +2,8 @@
 
 language: r
 warnings_are_errors: false
-sudo: required
-cache: packages
+# sudo: required
+# cache: packages
 
 notifications:
   email:
