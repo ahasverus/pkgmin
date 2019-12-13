@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# pkgmin
+# pkgmin <img src="inst/figures/pkgmin.png" height="120" align="right"/>
 
 <!-- badges: start -->
 
